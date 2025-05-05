@@ -39,7 +39,7 @@ AddEventHandler("playerConnecting", function(name, setKickReason, deferrals)
 
     Wait(0)
 
-    deferrals.update(string.format("Hello %s. Your DiscordID is being checked", name))
+    deferrals.update(string.format("Hello %s. Your Discord ID is being checked", name))
 
     if not discordID then
         deferrals.done("You are not connected to Discord.")
